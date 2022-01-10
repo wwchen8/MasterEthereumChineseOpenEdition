@@ -102,7 +102,7 @@ Emerald Wallet:: ((("Emerald Wallet")))Emerald Wallet是设计为与以太坊经
 
 [[metamask_download]]
 .MetaMask Chrome扩展件的详细页面
-image::{abspath}images/metamask_download.png["MetaMask详细页面"]
+image::images/metamask_download.png["MetaMask详细页面"]
 
 确认你正在下载真正的MetaMask扩展件很重要，因为有时恶意扩展件可以通过Google的过滤器。真正的软件的标识是：
 
@@ -120,7 +120,7 @@ image::{abspath}images/metamask_download.png["MetaMask详细页面"]
 
 [[metamask_password]]
 .MetaMask Chrome扩展件的密码页面
-image::{abspath}images/metamask_password.png["MetaMask密码页面"]
+image::images/metamask_password.png["MetaMask密码页面"]
 
 [TIP]
 ====
