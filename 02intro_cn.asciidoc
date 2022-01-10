@@ -548,7 +548,7 @@ msg.sender.transfer(withdraw_amount);
 
 [[etherscan_withdrawal_internal]]
 .Etherscan显示将以太币从合约中转出的内部交易
-image::images/etherscan_withdrawal_internal.png [“ Etherscan显示将以太币从合约中转出的内部交易”]
+image::images/etherscan_withdrawal_internal.png["Etherscan显示将以太币从合约中转出的内部交易"]
 
 [[intro_conclusion]]
 === 本章小结
