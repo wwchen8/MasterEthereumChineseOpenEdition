@@ -210,7 +210,7 @@ image::images/ropsten_block_explorer.png["Etherscan Ropsten Block Explorer"]
 
 [[send_to_faucet]]
 .向水龙头发送1个以太币
-image::{abspath}images/send_to_faucet.png["向水龙头发送1个以太币"]
+image::images/send_to_faucet.png["向水龙头发送1个以太币"]
 
 糟糕！你可能会注意到你无法完成交易。MetaMask说你的余额不足。乍一看，这似乎令人困惑：你有1 ETH，你想发送1 ETH，那么为什么MetaMask表示你的账户资金不足？
 
@@ -427,7 +427,7 @@ PUSH24 0x7541F409787592C988A079407FB28B4AD000290000000000
 
 [[remix_run]]
 .在Remix IDE的“Run”选项中，选择“Injected Web3”环境
-image::{abspath}images/remix_run.png["在Remix IDE的“Run”选项中，选择“Injected Web3”环境"]
+image::images/remix_run.png["在Remix IDE的“Run”选项中，选择“Injected Web3”环境"]
 
 你刚刚确认的“运行”设置正下方是准备创建的 +Faucet+ 合约。单击<<remix_run>>中显示的“部署”按钮。
 
@@ -435,7 +435,7 @@ Remix将构建特殊的“创建”交易，如<<remix_metamask_create>>所示�
 
 [[remix_metamask_create]]
 .MetaMask显示合约创建过程的交易
-image::{abspath}images/remix_metamask_create.png["MetaMask显示合约创建过程的交易"]
+image::images/remix_metamask_create.png["MetaMask显示合约创建过程的交易"]
 
 现在你必须等待合约被区块链网络所确认。在Ropsten上确认合约大约需要15到30秒。 Remix虽然看起来没在工作，但是要耐心等待。
 
@@ -443,7 +443,7 @@ image::{abspath}images/remix_metamask_create.png["MetaMask显示合约创建过�
 
 [[remix_contract_interact]]
 .水龙头合约上线了！
-image::{abspath}images/remix_contract_interact.png["水龙头合约上线了!"]
+image::images/remix_contract_interact.png["水龙头合约上线了!"]
 
 请注意，+Faucet+ 合约现在具有其自己的地址：Remix将其显示为“ 0x72e ... c7829上的水龙头”（尽管你的地址，随机字母和数字将有所不同）。右侧的小剪贴板符号可让你将合约地址复制到剪贴板。我们将在下一节中使用它。(((range="endofrange", startref="ix_02intro-asciidoc16")))(((range="endofrange", startref="ix_02intro-asciidoc15")))
 
@@ -459,13 +459,13 @@ image::{abspath}images/remix_contract_interact.png["水龙头合约上线了!"]
 
 [[remix_contract_address]]
 .从Remix复制合约地址
-image::{abspath}images/remix_contract_address.png["从Remix复制合约地址"]
+image::images/remix_contract_address.png["从Remix复制合约地址"]
 
 保持Remix打开；我们稍后会使用。现在，将浏览器导航到 _ropsten.etherscan.io_ 并将地址粘贴到搜索框中。你应该看到合约在Ropsten以太坊测试网上的地址历史记录，如<<etherscan_contract_address>>所示.(((range="endofrange", startref="ix_02intro-asciidoc17")))
 
 [[etherscan_contract_address]]
 .在Etherscan区块浏览器中查看水龙头合约的地址
-image::{abspath}images/etherscan_contract_address.png["在etherscan块浏览器中查看水龙头合约的地址"]
+image::images/etherscan_contract_address.png["在etherscan块浏览器中查看水龙头合约的地址"]
 
 [[fund_contract]]
 ==== 为合约充值
@@ -476,7 +476,7 @@ image::{abspath}images/etherscan_contract_address.png["在etherscan块浏览器�
 
 [[metamask_send_to_contract]]
 .将1个以太币发送到合约地址
-image::{abspath}images/metamask_send_to_contract.png["将1个以太币发送到合约地址"]
+image::images/metamask_send_to_contract.png["将1个以太币发送到合约地址"]
 
 一分钟后，如果你重新加载Etherscan区块浏览器，它将显示另一笔交易到合约地址，并将余额更新为1个以太币。
 
@@ -499,7 +499,7 @@ function () external payable {}
 
 [[remix_contract_withdraw]]
 .在Remix中Faucet.sol的提现功能
-image::{abspath}images/remix_contract_interact.png["在Remix中Faucet.sol的提现功能"]
+image::images/remix_contract_interact.png["在Remix中Faucet.sol的提现功能"]
 
 这是合约的Remix接口。它允许我们构造交易，用来调用合约中定义的功能。我们将输入 +withdraw_amount+ ，然后单击“提现”按钮以创建交易。
 
@@ -516,19 +516,19 @@ image::{abspath}images/remix_contract_interact.png["在Remix中Faucet.sol的提�
 
 [[remix_withdraw]]
 .在Remix中单击“提现”以创建提现交易
-image::{abspath}images/remix_withdraw.png[“在Remix中单击“提现”以创建提现交易”]
+image::images/remix_withdraw.png[“在Remix中单击“提现”以创建提现交易”]
 
 MetaMask将弹出一个交易窗口供您批准。点击确认，将你的提现通知发送到合约（请参见<<metamask_withdraw>>）。
 
 [[metamask_withdraw]]
 .MetaMask调用提现功能的交易
-image::{abspath}images/metamask_withdraw.png["MetaMask调用提现功能的交易"]
+image::images/metamask_withdraw.png["MetaMask调用提现功能的交易"]
 
 请稍等片刻，然后重新加载Etherscan区块浏览器，以查看 +Faucet+ 合约地址历史记录中反映的交易（请参见<<etherscan_withdrawal_tx>>）。
 
 [[etherscan_withdrawal_tx]]
 .Etherscan显示在调用提现功能的交易
-image::{abspath}images/etherscan_withdrawal_tx.png["Etherscan显示调用提现功能的交易"]
+image::images/etherscan_withdrawal_tx.png["Etherscan显示调用提现功能的交易"]
 
 
 现在，我们看到一个新的交易，目的地为合约地址，交易金额为0 ether。合约的余额已更改，现在为0.9以太，因为它已按要求向我们发送了0.1以太。但是，我们在 _合同地址历史记录_ 中看不到“OUT”交易。
@@ -548,7 +548,7 @@ msg.sender.transfer(withdraw_amount);
 
 [[etherscan_withdrawal_internal]]
 .Etherscan显示将以太币从合约中转出的内部交易
-image :: images / etherscan_withdrawal_internal.png [“ Etherscan显示将以太币从合约中转出的内部交易”]
+image :: images/etherscan_withdrawal_internal.png [“ Etherscan显示将以太币从合约中转出的内部交易”]
 
 [[intro_conclusion]]
 === 本章小结
