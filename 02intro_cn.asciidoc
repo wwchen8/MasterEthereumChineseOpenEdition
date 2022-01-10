@@ -136,13 +136,13 @@ image::images/metamask_password.png["MetaMask密码页面"]
 
 [[metamask_mnemonic]]
 .由MetaMask创建的钱包助记符备份
-image::{abspath}images/metamask_mnemonic.png["MetaMask助记符页面"]
+image::images/metamask_mnemonic.png["MetaMask助记符页面"]
 
 确认安全存储了助记符后，您将能够查看以太坊帐户的详细信息，如<<metamask_account>>.(((range="endofrange", startref="ix_02intro-asciidoc5")))
 
 [[metamask_account]]
 .您在MetaMask中的以太坊账户
-image::{abspath}images/metamask_account.png["MetaMask帐户页面"]
+image::images/metamask_account.png["MetaMask帐户页面"]
 
 你的帐户页面显示你的帐户名称（默认情况下为“帐户1”），以太坊地址（示例中为 +0x9E713 ... + ）和彩色图标，以帮助你直观地将该帐户与其他帐户区分开。在帐户页面的顶部，你可以看到当前正在使用的以太坊网络（示例中为“主网络”）。
 
@@ -179,7 +179,7 @@ Localhost 8545:: 连接到与浏览器在同一台计算机上运行的节点。
 
 [[metamask_ropsten_faucet]]
 .MetaMask Ropsten测试水龙头
-image::{abspath}images/metamask_ropsten_faucet.png["MetaMask Ropsten测试水龙头"]
+image::images/metamask_ropsten_faucet.png["MetaMask Ropsten测试水龙头"]
 
 你可能会注意到网页已经包含你的MetaMask钱包的以太坊地址。 MetaMask自动将启用了以太坊的网页与你的MetaMask钱包集成在一起，并且可以在网页上“查看”以太坊地址，例如，允许你向显示以太坊地址的在线商店付款。如果网页请求，MetaMask也可以使用你自己的钱包地址作为收件人地址来填充网页。在此页面中，水龙头应用程序正在向MetaMask询问要发送测试以太币的钱包地址。
 
@@ -194,7 +194,7 @@ image::{abspath}images/metamask_ropsten_faucet.png["MetaMask Ropsten测试水龙
 
 [[ropsten_block_explorer]]
 .Etherscan Ropsten测试网区块浏览器
-image::{abspath}images/ropsten_block_explorer.png["Etherscan Ropsten Block Explorer"]
+image::images/ropsten_block_explorer.png["Etherscan Ropsten Block Explorer"]
 
 该交易已记录在Ropsten区块链上，任何人都可以随时查看，只需搜索交易ID或 http://bit.ly/2Q860Wk[访问链接]即可。
 
@@ -236,13 +236,13 @@ image::{abspath}images/send_to_faucet.png["向水龙头发送1个以太币"]
 
 [[metamask_account_context_menu]]
 .MetaMask帐户交易记录菜单
-image::{abspath}images/metamask_account_context_menu.png["MetaMask帐户记录菜单"]
+image::images/metamask_account_context_menu.png["MetaMask帐户记录菜单"]
 
 选择“在Etherscan上查看帐户”以在区块浏览器中打开一个网页，显示帐户的交易历史记录，如<<block_explorer_account_history>>。
 
 [[block_explorer_account_history]]
 .Etherscan上的账户公开地址交易历史记录
-image::{abspath}images/block_explorer_account_history.png["Etherscan上的账户公开地址交易历史记录"]
+image::images/block_explorer_account_history.png["Etherscan上的账户公开地址交易历史记录"]
 
 在这里，你可以查看以太坊账户的整个交易历史。它显示了Ropsten区块链上记录的所有交易，你的地址是交易发起者或接收者。单击其中一些交易以查看更多详细信息。
 
@@ -370,25 +370,25 @@ Solidity编译器是独立的可执行文件，是各种框架的一部分，并
 
 [[remix_close_tab]]
 .关闭默认示例选项
-image::{abspath}images/remix_close_tab.png["关闭默认示例选项"]
+image::images/remix_close_tab.png["关闭默认示例选项"]
 
 现在，通过单击左上方工具栏中的圆形加号来添加新标签，如<<remix_toolbar>>。将新文件命名为 _Faucet.sol_。
 
 [[remix_toolbar]]
 .单击加号打开一个新选项
-image::{abspath}images/remix_toolbar.png["单击加号打开一个新选项"]
+image::images/remix_toolbar.png["单击加号打开一个新选项"]
 
 打开新标签后，请复制并粘贴示例 _Faucet.sol_ 中的代码，如 <<remix_faucet_load>>。
 
 [[remix_faucet_load]]
 .将水龙头示例代码复制到新的选项卡中
-image::{abspath}images/remix_faucet_load.png[“将水龙头示例代码复制到新的选项卡中”]
+image::images/remix_faucet_load.png[“将水龙头示例代码复制到新的选项卡中”]
 
 将 _Faucet.sol_ 合同加载到Remix IDE中之后，IDE将自动编译代码。如果一切顺利，你将在右侧的“编译”选项卡下看到一个带有“水龙头”的绿色框，确认编译成功（请参见<<remix_compile>>）。
 
 [[remix_compile]]
 .Remix成功编译了Faucet.sol合约
-image::{abspath}images/remix_compile.png["Remix成功编译了Faucet.sol合约"]
+image::images/remix_compile.png["Remix成功编译了Faucet.sol合约"]
 
 如果出现问题，最可能的问题是Remix IDE使用的Solidity编译器版本不同于0.5.12。在这种情况下，我们的pragma指令将阻止 _Faucet.sol_ 编译。要更改编译器版本，请转到“设置”选项卡，将版本设置为0.5.12，然后重试。
 
