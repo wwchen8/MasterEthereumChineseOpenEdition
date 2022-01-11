@@ -254,7 +254,7 @@ web3.eth.sendTransaction({from: src, to: dst, \
 
 [[parity_txdemo_value_nodata]]
 .Parity钱包展示一个有价值传递，但不包括数据的交易 
-image::{abspath}images/parity_txdemo_value_nodata.png["Parity wallet showing a transaction with value, but no data"]
+image::images/parity_txdemo_value_nodata.png["Parity wallet showing a transaction with value, but no data"]
 
 
 下一个例子同时指定了值和有效数据负载：
@@ -270,7 +270,7 @@ web3.eth.sendTransaction({from: src, to: dst, \
 
 [[parity_txdemo_value_data]]
 .Parity钱包显示具有价值和数据的交易
-image::{abspath}images/parity_txdemo_value_data.png["Parity 钱包软件展示一个包含价值和数据的交易"]
+image::images/parity_txdemo_value_data.png["Parity 钱包软件展示一个包含价值和数据的交易"]
 
 下一个交易包括有效数据，但交易的值为零：
 
@@ -284,7 +284,7 @@ web3.eth.sendTransaction({from: src, to: dst, value: 0, data: "0x1234"});
 
 [[parity_txdemo_novalue_data]]
 .Parity钱包显示一个没有价值传递，但有数据的交易
-image::{abspath}images/parity_txdemo_novalue_data.png["Parity wallet showing a transaction with no value, only data"]
+image::images/parity_txdemo_novalue_data.png["Parity wallet showing a transaction with no value, only data"]
 
 [role="pagebreak-before"]
 最后，一个交易既不包含要发送的值，也不包含有效数据载荷：
