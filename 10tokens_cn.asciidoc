@@ -391,7 +391,7 @@ Saving artifacts...
 
 [[ganache_METoken]]
 .METoken在Ganache上的部署
-image::{abspath}images/ganache_metoken.png["METoken deployment on Ganache"]
+image::images/ganache_metoken.png["METoken deployment on Ganache"]
 
 [[truffle_console]]
 ===== 通过Truffle控制台使用METoken
