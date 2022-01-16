@@ -725,7 +725,7 @@ image::images/ens-manager-set-content.png["Set the 'content' return for auction.
 
 [[auction_dapp_final_architecture]]
 .拍卖DApp的架构
-image::images/auction_dapp_final_architecture.png [“拍卖DApp的架构”]
+image::images/auction_dapp_final_architecture.png[“拍卖DApp的架构”]
 
 === 本章小结
 
